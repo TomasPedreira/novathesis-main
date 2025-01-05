@@ -1,0 +1,48 @@
+%!TEX root = ../template.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% abstract-en.tex
+%% NOVA thesis document file
+%%
+%% Abstract in English([^%]*)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\typeout{NT FILE abstract-en.tex}%
+
+\paragraph{}Over the years, the world of technology has been expanding in every possible field, 
+and agriculture is no exception. The use of technology in Smart Agriculture has been increasing, with 
+Internet of Things networks, Artificial Intelligence systems for management and forecasting, and robotics to 
+automate processes, do the repetitive jobs humans would rather not do, like applying pesticide, 
+harvesting products, and evaluating the state of the fields, and also some that humans can't do, 
+surveilling large fields. These developments not only come to facilitate tasks but also to battle ongoing problems 
+with the agricultural environment, like the lack of young people willing to do hard work on the fields 
+and the increase of the world population, that will increase the need for food production. 
+
+\paragraph{}This work is focused on the development of 
+a tractor-trailer robot, capable of autonomously navigating through a field while spraying pesticides 
+directly on the products. The focus is on the navigation side of the robot, researching the use of 
+robotics in Smart Agriculture, researching robot path planning methods like Voronoi Graphs, Visibility graphs, Sampling-based approaches like 
+the Rapidly exploring Random Trees and the Probabilistic Roadmap, 
+Bio-heuristic algorithms like the Ant Colony Optimization, Particle Swam Optimization and the Genetic Algorithm, and also mentioning the learning-based methods. 
+This work will also review a few control methods included in the library nav2 of ROS2 like the Dynamic Windows Approach,
+ Pure Pursuit, and the Model Predictive Controller. This task is already a challenging one, however, with the addition of the trailer 
+ to the system, the task becomes even more challenging, as the trailer dynamics will need to be accounted 
+for. In the end the chosen methods to be tested will be the Voronoi Graph with the A* algorithm for path 
+planning, and the Pure Pursuit controller for the trajectory tracking.
+
+
+\paragraph{}The tractor-trailer system was chosen, despite its complexity and limited documentation, 
+due to its modularity, allowing for independent operation and reusability.
+
+\keywords{
+  Smart Agriculture \and
+  tractor-trailer \and
+  IoT \and
+  Artificial Intelligence \and
+  Robotics \and
+  Path planning \and
+  Robot control \and
+  ROS2 \and
+  Voronoi Graph \and
+  A* \and
+  Pure Pursuit 
+}

@@ -1,0 +1,48 @@
+%!TEX root = ../template.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% abstract-pt.tex
+%% NOVA thesis document file
+%%
+%% Abstract in Portuguese
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\typeout{NT FILE abstract-pt.tex}%
+
+\paragraph{}Ao longo dos anos, o mundo da tecnologia tem-se expandido em todos os possíveis campos, 
+e a agricultura não é exceção. O uso de tecnologia na Agricultura Inteligente tem vindo a aumentar, 
+com redes de Internet of Things, sistemas de Inteligência Artificial para gestão e previsão, e robótica para 
+automatizar processos, realizando as tarefas repetitivas que os humanos preferem não fazer, como 
+aplicar pesticidas, colher produtos e avaliar o estado dos campos, além de algumas que os humanos 
+não conseguem fazer, como a vigilância de grandes áreas agrícolas. Estes desenvolvimentos não só 
+facilitam as tarefas, como também combatem problemas contínuos no ambiente agrícola, como a falta de 
+jovens dispostos a realizar trabalhos duros no campo e o aumento da população mundial, que irá 
+intensificar a necessidade de produção de alimentos.
+
+\paragraph{}Este trabalho centra-se no desenvolvimento de um trator com reboque, capaz de navegar 
+autonomamente por um campo enquanto aplica pesticidas diretamente sobre os produtos. 
+O foco é na navegação do robô, investigando o uso da robótica na Agricultura de Precisão, 
+explorando métodos de planeamento de trajetórias para robôs, como Voronoi Graphs, Visibility Graphs, 
+abordagens baseadas em amostragem como o Rapidly exploring Random Trees e o Probabilistic Roadmap, algoritmos bio heurísticos como o Ant Colony Optimization, 
+Particle Swarm Optimization e Genetic Algorithm, e mencionando ainda métodos baseados em aprendizagem. Este trabalho também irá rever alguns 
+métodos de controlo incluídos na biblioteca nav2 do ROS2, como o Dynamic Windows Approach, Pure Pursuit e o Model Predictive Controller. Esta 
+tarefa já é desafiante por si só, no entanto, com a adição do reboque ao sistema, a tarefa torna-se 
+ainda mais complexa, pois será necessário considerar as dinâmicas do reboque. No final, os métodos 
+escolhidos para serem testados serão o Voronoi Graphs com o algoritmo A* para o planeamento de 
+trajetórias e o controlador Pure Pursuit para o seguimento da trajetória.
+
+\paragraph{}O sistema trator-reboque foi escolhido, apesar da sua dificuldade e escassez de documentação, 
+devido à sua modularidade, permitindo que o seu funcionamento seja, por regra, independente e reutilizável.
+
+
+\keywords{ Agricultura Inteligente \and 
+trator-reboque \and
+IoT \and 
+Inteligência Artificial \and 
+Robótica \and 
+Planeamento de trajetórias \and 
+Controlo de robôs \and 
+ROS2 \and 
+Voronoi Graphs \and 
+A* \and 
+Pure Pursuit }
+% to add an extra black line
