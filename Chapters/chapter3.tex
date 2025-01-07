@@ -12,28 +12,29 @@
 \label{cha:planning}
 \paragraph{}In this chapter, there will be a description of the work proposal, where the steps needed to complete 
 this work will be presented and explained. There will also a schedule with a Gantt Chart showing an estimation of 
-the time needed to complete each step and when it will take place. Finaly, there will be a a list of potential conferences 
+the time needed to complete each step and when it will take place. Finaly, there will be a list of potential conferences 
 and journals where the results of this work can be published.
 \section{Work Proposal}
 \label{sec:workproposal}
-\paragraph{}To sucsessfully complete this work, there will need to be seven steps. The first step is to create a
+\paragraph{}To successfully complete this work, there will need to be seven steps. The first step is to create a
 simulation model capable of capturing the dynamics of the tractor-trailer system and its environment, here the model of the 
-tractor-trailer system will need adaptation as the usual methods of state publishing are not fully equiped to handle passive revolute joints 
-like the hitch joint and, to account for this, there is the need to created another method to do so, for example devoloping a state 
+tractor-trailer system will need adaptation as the usual methods of state publishing are not fully equipped to handle passive revolute joints 
+like the hitch joint and, to account for this, there is the need to create another method to do so, for example developing a state 
 publisher.
+
 
 The second and third steps are to develop the planning and control algorithms and tune them in the simulator. Some of the 
 algorithms and methods mentioned in the previous chapter are implemented in ROS and Gazebo Classic and, to test them in the 
 updated ROS 2 and Gazebo Fortress, the algorithms will need to be adapted to the new versions of the software if not completely 
-refractored. Because of these new conditions, tuning the algorithms will prove to be time consuming and, therefore, a step of 
+remade. Because of these new conditions, tuning the algorithms will prove to be time consuming and, therefore, a step of 
 its own.
 
 The fourth and fifth steps are to implement the algorithms in the real system and test them in a controlled environment. The  
 transition from simulation to the real system introduces a new set of challenges to account for, such as sensor imperfections, 
-communication delays and errors, and also unpredictable environmental events like wind, rain, and also terrain imperfections 
+communication delays and errors, and unpredictable environmental events like wind, rain, and also terrain imperfections 
 (holes, mud, rocks).
 
-The sixth step is writing the thesis and the last step is to write a paper with the results of this work and 
+The sixth step is writing the thesis, and the last step is to write a paper with the results of this work and 
 publish it in a conference or journal. The publishing of results is categorized as a step of its own as a paper 
 will need to be written and the results will also need to be prepared for presentation, which will take time.
 \clearpage
@@ -49,13 +50,13 @@ The development of the planning and control algorithms is estimated to take the
 three months following, January, February and March with the last month also overlapping with their tuning. 
 
 The implementation of the algorithms in the real system is estimated to take the April, 
-May and June, and their tuning will overlap in June and, most likely, extendig itself to July. 
+May and June, and their tuning will overlap in June and, most likely, extending itself to July. 
 
 While the final adjustments to the system are being make, most of the thesis can be written and, therefore, 
 the writing of the thesis will take place from July until its final submission date in September. 
 
-To publish the results, in September, while writting the final thesis, the results and associated paper 
-will be prepared to be submited to a conference or journal. 
+To publish the results, in September, while writing the final thesis, the results and associated paper 
+will be prepared to be submitted to a conference or journal. 
 \begin{figure}[h]
     \centering
     \includegraphics[width=1\textwidth]{ganttV3.png}
@@ -63,13 +64,13 @@ will be prepared to be submited to a conference or journal.
     \label{fig:schedule}
 \end{figure}
 
-\paragraph{}Since this document is to be submitted in Februay, the first and second steps have already been started 
+\paragraph{}Since this document is to be submitted in February, the first and second steps have already been started 
 and are currently being worked on. The current approach to the adaptation of the simulation model is to create a 
 state publisher which calculates the values of the hitch joint every time a new velocity is commanded (approximately 
 every ten milliseconds). The approach may change as the work progresses since it is not fault tolerant and may only be 
-a temporary solution to start implementing the planning algorithmsm, as to not get behind schedule.
+a temporary solution to start implementing the planning algorithms, as to not get behind schedule.
 
-The implementation of the planning and control algorithms is also already being worked on, with the current main focus 
+The implementation of the planning and control algorithms is also already being worked on, with the current focus 
 being the adaptation of the Voronoi algorithm to the new version of ROS.
 \section{Results Publishing plan}
 \label{sec:resultsplan}
